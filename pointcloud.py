@@ -1,5 +1,3 @@
-#포인트 클라우드 3D 뽑는 코드
-
 import pyrealsense2 as rs
 import numpy as np
 import cv2
@@ -112,7 +110,6 @@ try:
                 o3d.visualization.draw_geometries([pcd_face_cluster])
             else:
                 print("No clusters found within the specified depth range.")
-                del pcd_face_cluster
         else:
             print("No valid points found within the specified depth range.")
 
